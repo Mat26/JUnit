@@ -22,27 +22,27 @@ public class calculadoraTest {
     @Test
     public void testSuma(){
         System.out.println("Suma");
-        int actual = 15;
+        int expected = 15;
         //calculadora cal = new calculadora();
-        int expected = cal.suma(7, 8);
+        int actual = cal.suma(7, 8);
         Assert.assertEquals(expected,actual);
     }
     
     @Test
     public void testResta(){
         System.out.println("Resta");
-        int actual = -1;
+        int expected = -1;
         //calculadora cal = new calculadora();
-        int expected = cal.resta(7, 8);
+        int actual = cal.resta(7, 8);
         Assert.assertEquals(expected,actual);
     }
     
     @Test
     public void testMultiplicacion(){
         System.out.println("Multiplicacion");
-        int actual = 56;
+        int expected = 56;
         //calculadora cal = new calculadora();
-        int expected = cal.multiplicacion(7, 8);
+        int actual = cal.multiplicacion(7, 8);
         Assert.assertEquals(expected,actual);
     }
     

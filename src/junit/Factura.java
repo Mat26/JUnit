@@ -14,11 +14,11 @@ public class Factura {
   public void setLineas(ArrayList<Double> lineas) {
     this.lineas = lineas;
   }
-  public void addLinea(double linea) {
-    
-    lineas.add(linea);
-    
+  
+  public void addLinea(double linea) {    
+    lineas.add(linea);    
   }
+  
   
   public double sumarLineas () {
     double total=0;

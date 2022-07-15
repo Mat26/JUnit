@@ -1,7 +1,7 @@
 package junit;
 
 
-import org.junit.After;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,21 +15,19 @@ public class FacturaTest {
         f = new Factura();
         f.addLinea(100);
         f.addLinea(200);
+        f.addLinea(300);
+        f.addLinea(400);
     }
 
     @Test
     public void sumaTest() {
-        Assert.assertEquals(300, f.sumarLineas(), 0);
+        Assert.assertEquals(1000, f.sumarLineas(), 0);
     }
 
     @Test
-    public void restaTest() {
-        Assert.assertEquals(200, f.mayor(), 0);
+    public void mayorTest() {
+        Assert.assertEquals(400, f.mayor(), 0);
     }
 
-    @After
-    public void finaliza() {
-        f = null;
-    }
 
 }
